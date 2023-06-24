@@ -5,43 +5,45 @@
         <title>Calculadora</title>
         <!--Enlazando la hoja de estilos con esta página-->
         <link rel="stylesheet" href="calculadora.css">
+        <!--Introduciendo el javascript-->
+        <script src="calculadora.js"></script>
     </head>
     <body>
         <div class="contenedor">
         <table>
             <caption>CALCULADORA</caption>
             <th colspan="4">
-                <input id="display" type="text" readonly="readonly">
+               <b><input id="display" type="text" readonly="readonly"></b>    
             </th>
             <tr>
-                <td><button>C</button></td>
-                <td><button>^</button></td>
-                <td><button>%</button></td>
-                <td><button>/</button></td>
+                <td><button onclick="fnLimpiarPantalla()">C</button></td>
+                <td><button onclick="fnOperacion(5)">^</button></td>
+                <td><button onclick="fnPorcentaje()">%</button></td>
+                <td><button onclick="fnOperacion(4)">/</button></td>
             </tr>
             <tr>
-                <td><button>7</button></td>
-                <td><button>8</button></td>
-                <td><button>9</button></td>
-                <td><button>X</button></td>
+                <td><button onclick="fnMarcarNumero(7)">7</button></td>
+                <td><button onclick="fnMarcarNumero(8)">8</button></td>
+                <td><button onclick="fnMarcarNumero(9)">9</button></td>
+                <td><button onclick="fnOperacion(3)">X</button></td>
             </tr>
             <tr>
-                <td><button>4</button></td>
-                <td><button>5</button></td>
-                <td><button>6</button></td>
-                <td><button>-</button></td>
+                <td><button onclick="fnMarcarNumero(4)">4</button></td>
+                <td><button onclick="fnMarcarNumero(5)">5</button></td>
+                <td><button onclick="fnMarcarNumero(6)">6</button></td>
+                <td><button onclick="fnOperacion(2)">-</button></td>
             </tr>
             <tr>
-                <td><button>1</button></td>
-                <td><button>2</button></td>
-                <td><button>3</button></td>
-                <td><button>+</button></td>
+                <td><button onclick="fnMarcarNumero(1)">1</button></td>
+                <td><button onclick="fnMarcarNumero(2)">2</button></td>
+                <td><button onclick="fnMarcarNumero(3)">3</button></td>
+                <td><button onclick="fnOperacion(1)">+</button></td>
             </tr>
             <tr>
-                <td><button>+/-</button></td>
-                <td><button>0</button></td>
-                <td><button>-</button></td>
-                <td><button>=</button></td>
+                <td><button onclick="fnCambiarSigno()">+/-</button></td>
+                <td><button onclick="fnMarcarNumero(0)">0</button></td>
+                <td><button onclick="fnMarcarNumero('.')">.</button></td>
+                <td><button onclick="fnOperar()">=</button></td>
             </tr>
         </table>
         </div>
