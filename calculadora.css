@@ -1,0 +1,34 @@
+/*Aplicando estilos al elemento body*/
+
+body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+/* Aplicando estilos para la tabla, celdas y la leyenda de la tabla*/
+table, th, td, caption{
+    color: white;
+    border: 5px solid white;
+    border-collapse: collapse;
+}
+
+/* Alicando estilos a los botones*/
+button{
+    width: 75px;
+    height: 75px;
+    font-size: 25px;
+}
+/* Aplicando estilos a la pantalla*/
+#display{
+    width: 315px;
+    height: 75px;
+    font-size: 25px;
+}
+/* Definiendo clase para alinear los elementos*/
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
