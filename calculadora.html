@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculadora</title>
         <!--Enlazando la hoja de estilos con esta página-->
         <link rel="stylesheet" href="calculadora.css">
         <!--Introduciendo el javascript-->
         <script src="calculadora.js"></script>
+        <title>Calculadora</title>
     </head>
     <body>
         <div class="contenedor">
@@ -42,7 +42,7 @@
             <tr>
                 <td><button onclick="fnCambiarSigno()">+/-</button></td>
                 <td><button onclick="fnMarcarNumero(0)">0</button></td>
-                <td><button onclick="fnMarcarNumero('.')">.</button></td>
+                <td><button id="botonDecimal" onclick="fnLimiteDecimal('.')">.</button></td>
                 <td><button onclick="fnOperar()">=</button></td>
             </tr>
         </table>
